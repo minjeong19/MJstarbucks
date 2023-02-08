@@ -47,6 +47,49 @@ img {
   color: white;
   text-decoration: underline;
 }
+.btn--brown {
+  color: #633510;
+  border-color: #633510;
+  transition: 0.6s;
+}
+.btn--brown:hover {
+  background-color: #633510;
+  color: white;
+  text-decoration: underline;
+}
+.btn--gold {
+  border-color: #966932;
+  color: #966932;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.btn--gold:hover {
+  background-color: #966932;
+  color: white;
+  text-decoration: underline;
+}
+.btn--white {
+  border-color: #fff;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.btn--white:hover {
+  background-color: #fff;
+  color: black;
+  text-decoration: underline;
+}
+.btn--black {
+  border-color: #000;
+  color: #000;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.btn--black:hover {
+  background-color: #000;
+  color: white;
+  text-decoration: underline;
+}
 /* HEADER */
 header {
   position: fixed;
@@ -505,4 +548,305 @@ header .badges .badge img {
   top: 0;
 }
 .rewards .inner .rewards__items .rewards__items__card .buttons .btn--login {
+}
+
+/* ESALVADOR */
+.elsalvador {
+  position: relative;
+  height: 570px;
+  background-image: url(../images/elsalvador_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.elsalvador .inner {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+.elsalvador .inner .elsalvador__item {
+  position: absolute;
+  width: 310px;
+  top: 85px;
+  left: 100px;
+  /* 애니메이션 주기 */
+  transform: translate(-700px, 0);
+  opacity: 0;
+  transition: 2.5s;
+}
+.elsalvador .inner .elsalvador__contents {
+  position: absolute;
+  width: 339px;
+  top: 200px;
+  left: 590px;
+  /* 애니메이션 주기 */
+  transform: translate(900px, 0);
+  transition: 2.5s;
+  opacity: 0;
+}
+.elsalvador:hover .inner .elsalvador__contents,
+.elsalvador:hover .inner .elsalvador__item {
+  transform: translate(0px, 0);
+  opacity: 1;
+}
+.elsalvador .inner .elsalvador__contents .item-text {
+  padding-bottom: 35px;
+}
+.elsalvador .inner .elsalvador__contents .btn.btn--brown {
+}
+
+/* ETHIOPIA */
+.ethiopia {
+  position: relative;
+  background-image: url(../images/ethiopia_bg.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 400px;
+}
+.ethiopia::before {
+  content: "";
+  position: absolute;
+  width: 425px;
+  height: 404px;
+  background-image: url("../images/ethiopia_before.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: -50px;
+  opacity: 0;
+}
+.ethiopia::after {
+  content: "";
+  position: absolute;
+  width: 361px;
+  height: 404px;
+  background-image: url("../images/ethiopia_after.png");
+  background-size: cover;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.ethiopia:active::before,
+.ethiopia:active::after {
+  transition: 1.5s;
+  opacity: 1;
+}
+
+.ethiopia .inner {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+.ethiopia .inner .ethiopia__contents {
+  position: absolute;
+  width: 495px;
+  top: 110px;
+  left: 3px;
+}
+.ethiopia .inner .ethiopia__item {
+  position: absolute;
+  right: -400px;
+  opacity: 0;
+}
+.ethiopia:active .inner .ethiopia__item {
+  transition: 1.5s;
+  transition-delay: 0.8s;
+  opacity: 1;
+}
+.ethiopia .inner .btn.btn--gold {
+  position: absolute;
+  top: 260px;
+  left: 270px;
+}
+
+/* FAVORITE */
+.pick {
+  background-image: url(../images/fav_bg.png);
+  position: relative;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.pick .inner {
+}
+.pick .inner .pick__text1 {
+  position: absolute;
+  width: 258px;
+  top: 120px;
+  left: 110px;
+  transform: translate(-700px, 0);
+  opacity: 0;
+  transition: 2s;
+}
+.pick .inner .pick__text2 {
+  position: absolute;
+  width: 362px;
+  top: 370px;
+  left: 3px;
+  transform: translate(-700px, 0);
+  opacity: 0;
+  transition: 2.5s;
+}
+.pick:hover .inner .btn.btn--white {
+  opacity: 1;
+}
+.pick:hover .inner .pick__text1,
+.pick:hover .inner .pick__text2 {
+  transform: translate(0);
+  opacity: 1;
+}
+/* 애니멘이션 방법
+.pick:hover .inner .pick__text1 {
+  transform: translate(0px, 0);
+  opacity: 1;
+}
+.pick:hover .inner .pick__text2 {
+  transform: translate(0px, 0);
+  opacity: 1;
+  transition-delay: 0.25s;
+} */
+
+.pick .inner .btn.btn--white {
+  position: absolute;
+  top: 570px;
+  left: 240px;
+  opacity: 0;
+  transition: 2s;
+}
+
+.pick .inner .pick__contents {
+  width: 912px;
+  position: absolute;
+  left: 440px;
+  top: 90px;
+}
+
+/* MAGAZINE */
+.magazine {
+  background-image: url(../images/magazine_bg.png);
+  position: relative;
+  height: 400px;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: 50% 220%; */
+  background-position: center 50px;
+  overflow: hidden;
+}
+.magazine .inner {
+}
+.magazine .inner .magazine__text {
+  position: absolute;
+  width: 510px;
+  top: 150px;
+  left: 150px;
+  /* z-index: 1; */
+}
+
+.magazine .inner .btn.btn--black {
+  position: absolute;
+  top: 260px;
+  left: 350px;
+}
+
+.magazine .inner .magazine__contents {
+  position: absolute;
+  width: 348px;
+  top: 0;
+  right: 60px;
+  opacity: 0;
+  transition: 1.5s;
+}
+.magazine:hover .inner .magazine__contents {
+  opacity: 1;
+}
+
+/* STORE */
+.store {
+  position: relative;
+  height: 400px;
+  background-image: url(../images/store_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.store .inner {
+  height: 400px;
+}
+.store .inner .store__text-1 {
+  position: absolute;
+  width: 385px;
+  top: 100px;
+  right: 50px;
+  transform: translate(800px, 0);
+  opacity: 0;
+  transition: 2s;
+}
+.store .inner .store__text-2 {
+  position: absolute;
+  width: 366px;
+  top: 170px;
+  right: 69px;
+  transform: translate(800px, 0);
+  opacity: 0;
+  transition: 2.5s;
+}
+.store .inner .btn.btn--black {
+  position: absolute;
+  top: 290px;
+  right: 330px;
+  transform: translate(800px, 0);
+  opacity: 0;
+  transition: transform 3s, background-color 0.5s, color 0.6s,
+    text-decoration 0.6s;
+}
+.store:hover .inner .btn.btn--black {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.store:hover .inner .store__text-1,
+.store:hover .inner .store__text-2 {
+  transform: translate(0);
+  opacity: 1;
+}
+.store .inner .store__img-1 {
+  position: absolute;
+  width: 366px;
+  top: 0;
+  left: 70px;
+  opacity: 0;
+  transition: 1.5s;
+}
+.store .inner .store__img-2 {
+  position: absolute;
+  width: 228px;
+  top: 150px;
+  left: 300px;
+  opacity: 0;
+  transition: 1.5s;
+}
+.store .inner .store__img-3 {
+  position: absolute;
+  width: 348px;
+  top: -60px;
+  left: 340px;
+  opacity: 0;
+  transition: 1.5s;
+}
+.store .inner .store__img-4 {
+  position: absolute;
+  width: 230px;
+  right: -70px;
+  bottom: 0;
+  opacity: 0;
+  transition: 1.5s;
+}
+.store:hover .inner .store__img-1,
+.store:hover .inner .store__img-2,
+.store:hover .inner .store__img-3,
+.store:hover .inner .store__img-4 {
+  opacity: 1;
 }
